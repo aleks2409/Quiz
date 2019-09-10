@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="home" class="flex-center flex-column">
+        <h4>CONTINENT QUIZ</h4>
+          <a class="btn" href="index.html"><i class="material-icons">home</i></a>
+            <div id="start"><i class="material-icons" style="color: #73AD21;">scatter_plot</i>Play</div>
+      </div>
+        <div id="quiz" style="display: none">
+            <h4>CONTINENT QUIZ</h4>
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+               </p> <div class="choice" id="A" onclick="checkAnswer('A')"><p class="choice-prefix"><i class="material-icons" style="color: rgb(244, 141, 0);">scatter_plot</i><div class="prog" id="0"></div></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
